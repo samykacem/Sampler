@@ -9,3 +9,4 @@ images = []
 for filename in os.listdir(directorySource):
     im = imageio.imread(directorySource+filename)
     imageio.imwrite(directoryDestination+filename.replace(".png",".gif"), im)
+    #imageio.mimsave(directoryDestination+filename.replace(".png",".gif"), im)
